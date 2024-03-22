@@ -1,0 +1,67 @@
+div.right
+    div
+        h3.title -- Get a Free Quote
+    div.names
+        div.input-box
+            label -- First Name
+            c-input name="firstName"
+        div.input-box
+            label -- Last Name
+            c-input name="lastName"
+    div.input-box
+        label -- Emal address
+        c-input name="email"
+    div
+        input type="checkbox" name="model"
+        label -- My vehicle's model year is 2017 or newer
+    div
+        input type="checkbox" name="miles"
+        label -- My vehicle has less than 80,000 miles
+    div
+        input type="checkbox" name="location"
+        label -- I do not ive in eiher California or Massachusetts
+    p
+        --
+        Dy dicking Sun, you agre to mend your litormation so Alucate, Budged to their peace solo
+        --
+    div.submit
+        button type="submit" -- submit
+style {
+    .right {
+        background-color: darkblue;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .title {
+        font-size: x-large;
+    }
+    .names {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: small;
+            padding: 1px 0 1px 10px;
+        }
+    }
+    .submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            padding: 10px 30px;
+            background-color: rgb(205, 72, 99);
+            border-radius: 999px;
+            color: white;
+            font-size: large;
+            box-shadow:;
+        }
+    }
+}

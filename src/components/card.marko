@@ -1,0 +1,80 @@
+static const listData = [
+    {
+        icon: "./icons8-ebay.svg",
+        title: "Affordable Protection Plans",
+        subTitle:
+            "For as lite as $18/mo, well pay for repairs after your manufacturer's warranty expires.",
+    },
+    {
+        icon: "./icons8-ebay.svg",
+        title: "100% of covered repair costs",
+        subTitle:
+            "Covers everything from your steering and transmission, down to the fancy tech inside your touchscreen. All you pay is a $50 deductible.",
+    },
+    {
+        icon: "./icons8-ebay.svg",
+        title: "Repair Anywhere",
+        subTitle:
+            "You choose your mechanic, and we pay them directly for repairs, so you aren't stuck chasing down reimbursements.",
+    },
+];
+div.left
+    div.header
+        h3 -- Allstate Extended Vehicle Care
+        h4 -- Protect your vehicle from unexpected repaire costs
+    div
+        ul.items
+            for|item, index, colorList| of=listData
+                li.item value=index
+                    img src="./dollar.png" alt=item.title
+                    div
+                        h3.item-title -- ${item.title}
+                        h4.item-subtitle -- ${item.subTitle}
+style {
+    .left {
+        .header {
+            background-color: blue;
+            padding: 2rem 1rem;
+            border-radius: 5px;
+            text-align: center;
+            h3 {
+                color: aqua;
+                font-size: xx-large;
+            }
+            h4 {
+                font-size: larger;
+                font-weight: 300;
+            }
+        }
+        .items {
+            display: flex;
+            color: black;
+            flex-direction: column;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 80px;
+                img {
+                    height: 40px;
+                }
+                div {
+                    padding: 0 8px;
+                }
+            }
+        }
+        .item-title {
+            padding: 0;
+            margin: 0;
+        }
+        .item-subtitle {
+            padding: 0;
+            margin: 0;
+            font-weight: 300;
+            font-size: small;
+        }
+    }
+}
